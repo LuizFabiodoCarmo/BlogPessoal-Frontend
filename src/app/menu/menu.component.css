@@ -1,0 +1,13 @@
+.fs-16{
+    font-size: 16pt;
+}
+
+.fs-30{
+    font-size: 30pt;
+}
+
+.out:hover{
+ text-decoration-color: white;  
+ font-size: 16pt; 
+ font-weight: bold;
+}
