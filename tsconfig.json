@@ -6,6 +6,8 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+   "strictPropertyInitialization": false,
+   // linha 9, para que não precise inicializar os atributos como 'id' em Usuario.
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
