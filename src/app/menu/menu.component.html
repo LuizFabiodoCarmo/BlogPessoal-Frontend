@@ -8,22 +8,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav m-auto"> <!--diz a direção que fica disposto no menu -->
         <li class="nav-item active">
-        <img src="https://veja.abril.com.br/wp-content/uploads/2020/07/beyonce_75616316_470887976891092_974503221915040124_n-e1596121598923.jpg " 
-        alt="Imagem da cantora norte-america Beyoncé" width="50px" height="50px" class="img-fluid rounded-circle m-4">
+        <img src="{{foto}}" alt="Imagem do Usuário" width="50px" height="50px" class="img-fluid rounded-circle m-4">
         </li>
         <li class="nav-item">
-        <p class="m-4 font-weight-bold text-white  mr-4 ml-lg-4 fs-16">Nome do usuário</p>
+        <p class="m-4 font-weight-bold text-white  mr-4 ml-lg-4 fs-16">Seja Bem Vinda(o), {{nome}}</p>
         </li> 
         
-        <a class="navbar-brand m-3 font-weight-bold text-white ml-lg-4 fs-16" href="#">Seja bem vinde!!</a>
+        <!-- <a class="navbar-brand m-3 font-weight-bold text-white ml-lg-4 fs-16" href="#">Seja bem vinde!!</a>
         <li class="nav-item "> 
          <a href="">   
-      <p><i class="bi bi-key-fill text-white ml-4 fs-30 m-4"></i></p> </a></li>
+      <p><i class="bi bi-key-fill text-white ml-4 fs-30 m-4"></i></p> </a></li> -->
     </ul>
     
     <ul class="navbar-nav d-flex align-items-center font-weight-bold">
         <li class="nav-item pl-3 out"style="background-color: #B67CC5;"> 
-            <a href="">Sair<i class="bi bi-arrow-right-circle-fill text-light ml-4 fs-30 m-4"></i></a>
+            <a (click)="sair()" href="">Sair<i class="bi bi-arrow-right-circle-fill text-light ml-4 fs-30 m-4"></i></a>
 
         </li>
         </ul>

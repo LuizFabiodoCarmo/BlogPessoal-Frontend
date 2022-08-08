@@ -13,6 +13,7 @@ export class CadastrarComponent implements OnInit {
   usuario: Usuario = new Usuario
   confirmarSenha: string
   tipoUser: string
+  valideEmail: string
 
   constructor(
     private authService: AuthService,
@@ -22,6 +23,33 @@ export class CadastrarComponent implements OnInit {
   ngOnInit() {
     window.scroll(0, 0)
   }
+  
+  // Email(event: any){
+  //   this.usuario= event.target.value
+  //   if(this.usuario.usuario != this.valideEmail ){
+    
+  //   }
+  // }
+
+  // validEmail(event: any){
+  //   let txtEmail = document.querySelector('#txtEmail')
+  //   if(this.usuario.usuario ==this.indexOf ('@') == -1) {
+  // alert('E-mail inválido!')
+
+      //   txtEmail.innerHTML='E-mail inválido! ❌'
+      //   txtEmail.style.color='red'
+      //  } else{
+      //      txtEmail.innerHTML='E-mail válido! ✔️'
+      //      txtEmail.style.color='green'
+//       //      emailOk = true
+//        }    
+// }
+//MinimSenha(){
+// this.usuario.senha < (como colocar um parametro de minimo de digitos?)
+
+// }
+
+
   confirmSenha(event: any) {
     this.confirmarSenha = event.target.value
   }

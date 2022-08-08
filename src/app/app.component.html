@@ -1,11 +1,8 @@
-<!--
-<app-login></app-login>
-<app-rodape></app-rodape>
- <app-menu></app-menu>
-<app-cadastrar></app-cadastrar>
- -->
+ <app-menu *ngIf="auth.logado()" ></app-menu>
 
  <router-outlet></router-outlet>
 
+ <app-rodape *ngIf="auth.logado()" ></app-rodape> 
+<!--Com *ngIf="auth.logado()", o menu e rodape só aparecem quando o usuario estiver logado -->
 
 
